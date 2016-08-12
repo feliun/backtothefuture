@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F3E080D1D5E7891009A35B6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E080C1D5E7891009A35B6 /* Utilities.swift */; };
 		7F9A42221D5A4EF900DD4B1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A42211D5A4EF900DD4B1A /* AppDelegate.swift */; };
 		7F9A42241D5A4EF900DD4B1A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A42231D5A4EF900DD4B1A /* FirstViewController.swift */; };
 		7F9A42261D5A4EF900DD4B1A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A42251D5A4EF900DD4B1A /* SecondViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F3E080C1D5E7891009A35B6 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7F9A421E1D5A4EF900DD4B1A /* backtothefuture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = backtothefuture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F9A42211D5A4EF900DD4B1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F9A42231D5A4EF900DD4B1A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				7F9A422A1D5A4EF900DD4B1A /* Assets.xcassets */,
 				7F9A422C1D5A4EF900DD4B1A /* LaunchScreen.storyboard */,
 				7F9A422F1D5A4EF900DD4B1A /* Info.plist */,
+				7F3E080C1D5E7891009A35B6 /* Utilities.swift */,
 			);
 			path = backtothefuture;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				7F9A42261D5A4EF900DD4B1A /* SecondViewController.swift in Sources */,
 				7F9A42221D5A4EF900DD4B1A /* AppDelegate.swift in Sources */,
+				7F3E080D1D5E7891009A35B6 /* Utilities.swift in Sources */,
 				7F9A42241D5A4EF900DD4B1A /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +305,7 @@
 				7F9A42341D5A4EF900DD4B1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
