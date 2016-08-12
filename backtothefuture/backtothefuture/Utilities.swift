@@ -28,5 +28,9 @@ class Utilities {
         formatter.timeStyle = .medium
         return formatter.string(from: date)
     }
+    
+    func getRandomYear () -> String {
+        return String(arc4random_uniform(8999) + 1000)
+    }
 
 }

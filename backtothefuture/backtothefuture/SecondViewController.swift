@@ -15,8 +15,14 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var label3: UILabel!
     @IBOutlet weak var label4: UILabel!
     
-    @IBAction func ButtonClicked(_ sender: UIButton) {
+    let utilities = Utilities()
     
+    @IBAction func ButtonClicked(_ sender: UIButton) {
+        let year = utilities.getRandomYear()
+        label1.text = utilities.getLetterAtIndex(str: year, location: 0)
+        label2.text = utilities.getLetterAtIndex(str: year, location: 1)
+        label3.text = utilities.getLetterAtIndex(str: year, location: 2)
+        label4.text = utilities.getLetterAtIndex(str: year, location: 3)
     }
     
     override func viewDidLoad() {
