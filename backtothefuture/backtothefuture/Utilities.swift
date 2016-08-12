@@ -20,5 +20,13 @@ class Utilities {
         let index = str.index(str.startIndex, offsetBy: location)
         return String(str[index])
     }
+    
+    func getCurrentTime () -> String {
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateStyle = .none
+        formatter.timeStyle = .medium
+        return formatter.string(from: date)
+    }
 
 }

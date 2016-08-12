@@ -15,14 +15,24 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var label3: UILabel!
     @IBOutlet weak var label4: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    
+    var timer = Timer()
+    var utilities = Utilities()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let year = Utilities().getCurrentYear()
-        label1.text = Utilities().getLetterAtIndex(str: year, location: 0)
-        label2.text = Utilities().getLetterAtIndex(str: year, location: 1)
-        label3.text = Utilities().getLetterAtIndex(str: year, location: 2)
-        label4.text = Utilities().getLetterAtIndex(str: year, location: 3)
+        let year = utilities.getCurrentYear()
+        label1.text = utilities.getLetterAtIndex(str: year, location: 0)
+        label2.text = utilities.getLetterAtIndex(str: year, location: 1)
+        label3.text = utilities.getLetterAtIndex(str: year, location: 2)
+        label4.text = utilities.getLetterAtIndex(str: year, location: 3)
+        
+        self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(FirstViewController.tick), userInfo: nil, repeats: true)
+    }
+    
+    func tick () {
+        timeLabel.text = utilities.getCurrentTime()
     }
 
     override func didReceiveMemoryWarning() {
