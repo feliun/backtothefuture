@@ -27,12 +27,18 @@ class FirstViewController: UIViewController {
         label2.text = utilities.getLetterAtIndex(str: year, location: 1)
         label3.text = utilities.getLetterAtIndex(str: year, location: 2)
         label4.text = utilities.getLetterAtIndex(str: year, location: 3)
+        tick()
         
         self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(FirstViewController.tick), userInfo: nil, repeats: true)
     }
     
     func tick () {
         timeLabel.text = utilities.getCurrentTime()
+        UIView.animate(withDuration: 1.0, delay: 0, options: .curveEaseOut, animations: {
+            self.view.alpha = 0.5
+            }) { (true) in
+                self.view.alpha = 1.0
+        }
     }
 
     override func didReceiveMemoryWarning() {
